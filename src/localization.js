@@ -12,7 +12,6 @@ var language_mapping = {
   hu: require('../i18n/hu'),
   vi: require('../i18n/vi'),
   'pt-BR': require('../i18n/pt-BR'),
-  'zh-Hans': require('../i18n/zh-Hans')
 };
 
 module.exports = {
