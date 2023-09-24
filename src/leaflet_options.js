@@ -50,11 +50,23 @@ module.exports = {
     waypoints: [],
     language: 'en',
     alternative: 0,
-    layer: streets
+    layer: osm_de,
+    service: 1
   },
   services: [{
     label: 'Car (fastest)',
     path: 'https://router.project-osrm.org/route/v1'
+    debug: 'car',
+  },
+  {
+    label: 'Bike',
+    path: 'https://routing.openstreetmap.de/routed-bike/route/v1',
+    debug: 'bike',
+  },
+  {
+    label: 'Foot',
+    path: 'https://routing.openstreetmap.de/routed-foot/route/v1',
+    debug: 'foot',
   }],
   layer: [{
     'Mapbox Streets': streets,
