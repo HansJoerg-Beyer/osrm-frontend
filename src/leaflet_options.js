@@ -45,10 +45,10 @@ var streets = L.tileLayer(mapboxTileURL, {
 
 module.exports = {
   defaultState: {
-    center: L.latLng(38.8995,-77.0269),
+    center: L.latLng(49.45,7.75),
     zoom: 13,
     waypoints: [],
-    language: 'en',
+    language: 'de',
     alternative: 0,
     layer: osm_de,
     service: 1
@@ -56,24 +56,24 @@ module.exports = {
   services: [{
     label: 'Car (fastest)',
     path: 'https://router.project-osrm.org/route/v1'
-    debug: 'car',
+    // debug: 'car',
   },
   {
     label: 'Bike',
-    path: 'https://routing.openstreetmap.de/routed-bike/route/v1',
-    debug: 'bike',
+    path: 'https://routing.openstreetmap.de/routed-bike/route/v1'
+    // debug: 'bike',
   },
   {
     label: 'Foot',
-    path: 'https://routing.openstreetmap.de/routed-foot/route/v1',
-    debug: 'foot',
+    path: 'https://routing.openstreetmap.de/routed-foot/route/v1'
+    // debug: 'foot',
   }],
   layer: [{
-    'Mapbox Streets': streets,
-    'Mapbox Outdoors': outdoors,
-    'Mapbox Streets Satellite': satellite,
     'openstreetmap.org': osm,
     'openstreetmap.de.org': osm_de
+    // 'Mapbox Streets': streets,
+    // 'Mapbox Outdoors': outdoors,
+    // 'Mapbox Streets Satellite': satellite
   }],
   overlay: {
     'Hiking': hiking,
@@ -81,10 +81,10 @@ module.exports = {
     'Small Components': small_components
   },
   baselayer: {
-    one: streets,
-    two: outdoors,
-    three: satellite,
-    four: osm,
-    five: osm_de
+    one: osm,
+    two: osm_de
+    // three: streets,
+    // four: outdoors,
+    // five: satellite
   }
 };
