@@ -52,7 +52,7 @@
 /* Scale position */
 .leaflet-control-scale {
   position: absolute;
-  left: 200px;
+  left: 210px;
   bottom: 1px;
 }
 
@@ -296,8 +296,8 @@
 
 .osrm-directions-icon {
     background-image: url('../images/osrm.toolbar.icons.svg');
-    -webkit-background-size: 146px 24px;
-    background-size: 170px 24px;
+    -webkit-background-size: 193px 24px;
+    background-size: 193px 24px;
     margin: 0;
     content: '';
     display: inline-block;
@@ -313,7 +313,8 @@
 .osrm-josm-icon  { background-position: -72px 0; }
 .osrm-debug-icon  { background-position: -96px 0; }
 .osrm-mapillary-icon  { background-position: -120px 0; }
-.osrm-gpx-icon  { background-position: -146px 0; }
+.osrm-share-icon  { background-position: -146px 0; }
+.osrm-gpx-icon  { background-position: -169px 0; }
 .osrm-localization-chooser {
     color: #ffffff;
     background: transparent;
@@ -333,6 +334,60 @@
 .leaflet-osrm-tools-hide
 {
   display: none;
+}
+
+/* Sharing */
+.share-popup {
+    display: none;
+    position: absolute;
+    height: auto;
+    top: -5.2em;
+}
+
+.share-popup .share-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    cursor: default;
+}
+
+.share-popup .share-container {
+    position: relative;
+    padding: 4px;
+}
+
+.share-popup .share-type-button-container {
+    width: 100%;
+    padding: 0;
+}
+
+.share-popup .share-type {
+    display: inline-block;
+    height: 24px;
+    width: 50%;
+    margin: 0;
+    border: none;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.share-popup .share-type:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.share-popup .share-type.selected {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: default;
+}
+
+.share-popup .share-url {
+    border: none;
+    padding: 5px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* OSRM geocoder directions inputs */
@@ -919,4 +974,16 @@ td.distance {
 .leaflet-routing-container-hide.dark, .leaflet-routing-container-hide .leaflet-routing-alternatives-container {
     margin-right: -400px !important;
     transition: 0.5s;
+}
+
+#profile-selector {
+    color: #ffffff;
+    background-color: rgba(37,72,127, 0.8);
+    border-radius: 4px;
+    border: 0;
+    width: 128px;
+    height: 40px;
+    margin-top: -3px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
