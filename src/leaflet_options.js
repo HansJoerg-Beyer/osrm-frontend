@@ -48,26 +48,45 @@ module.exports = {
     center: L.latLng(49.45,7.75),
     zoom: 13,
     waypoints: [],
-    language: 'de',
+    language: 'en',
     alternative: 0,
     layer: osm_de,
     service: 1
   },
-  services: [{
-    label: 'Car (fastest)',
-    path: 'https://router.project-osrm.org/route/v1'
-    // debug: 'car',
-  },
-  {
-    label: 'Bike',
-    path: 'https://routing.openstreetmap.de/routed-bike/route/v1'
-    // debug: 'bike',
-  },
-  {
-    label: 'Foot',
-    path: 'https://routing.openstreetmap.de/routed-foot/route/v1'
-    // debug: 'foot',
-  }],
+  services: [
+    {
+      label: 'Car (OSM)',
+      path: 'https://router.project-osrm.org/route/v1'
+      // debug: 'car',
+    },{
+      label: 'Bike (OSM)',
+      path: 'https://routing.openstreetmap.de/routed-bike/route/v1'
+      // debug: 'bike',
+    },{
+      label: 'Foot (OSM)',
+      path: 'https://routing.openstreetmap.de/routed-foot/route/v1'
+      // debug: 'foot',
+    },{
+      label: 'Car (HJB)',
+      path: 'https://router.project-osrm.org/route/v1'
+      // debug: 'car',
+    },{
+      label: 'Bike (HJB)',
+      path: 'https://routing.openstreetmap.de/routed-bike/route/v1'
+      // debug: 'bike',
+    },{
+      label: 'Foot (HJB)',
+      path: 'https://routing.openstreetmap.de/routed-foot/route/v1'
+      // debug: 'foot',
+    },{
+      label: 'Rollator (HJB)',
+      path: 'https://router.project-osrm.org/route/v1'
+      // debug: 'car',
+    },{
+      label: 'Wheelcair (HJB)',
+      path: 'https://routing.openstreetmap.de/routed-bike/route/v1'
+      // debug: 'bike',
+    }],
   layer: [{
     'openstreetmap.org': osm,
     'openstreetmap.de.org': osm_de
