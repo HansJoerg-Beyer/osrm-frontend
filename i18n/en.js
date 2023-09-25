@@ -13,8 +13,13 @@ module.exports = {
   'Start - press enter to drop marker': 'Start - press enter to drop marker',
   'End - press enter to drop marker': 'End - press enter to drop marker',
   'Via point - press enter to drop marker': 'Via point - press enter to drop marker',
-  'Bike': 'Bike',
-  'Car': 'Car',
-  'Foot': 'Foot',
+  'Bike (OSM)': 'Bike (OSM)',
+  'Car (OSM)': 'Car (OSM)',
+  'Foot (OSM)': 'Foot (OSM)',
+  'Bike (HJB)': 'Bike (HJB)',
+  'Car (HJB)': 'Car (HJB)',
+  'Foot (HJB)': 'Foot (HJB)',
+  'Rollator (HJB)': 'Rollator (HJB)',
+  'Wheelcair (HJB)': 'Wheelcair (HJB)',
   'About': '<a href=/about.html>About this service and privacy policy</a>'
 };

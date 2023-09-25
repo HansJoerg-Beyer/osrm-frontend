@@ -13,8 +13,13 @@ module.exports = {
   'Start - press enter to drop marker': 'Start - drücken um einen Marker zu plazieren',
   'End - press enter to drop marker': 'Ende - drücken um einen Marker zu plazieren',
   'Via point - press enter to drop marker': 'Zwischenstop - drücken um einen Marker zu plazieren',
-  'Bike': 'Fahrrad',
-  'Car': 'Auto',
-  'Foot': 'Fussgänger',
+  'Car (OSM)': 'Auto (OSM)',
+  'Bike (OSM)': 'Fahrrad (OSM)',
+  'Foot (OSM)': 'Fussgänger (OSM)',
+  'Car (HJB)': 'Auto (HJB)',
+  'Bike (HJB)': 'Fahrrad (HJB)',
+  'Foot (HJB)': 'Fussgänger (HJB)',
+  'Rollator (HJB)': 'Rollator (HJB)',
+  'Wheelcair (HJB)': 'Rollstuhl (HJB)',
   'About': '<a href=/about.html>Informationen und Datenschutz</a>'
 };
